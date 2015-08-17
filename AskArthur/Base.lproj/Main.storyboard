@@ -299,7 +299,7 @@
                                             <action selector="loginButtonDidTouch:" destination="80p-mD-X2c" eventType="touchUpInside" id="u40-OO-Cyy"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-FI-m1m">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-FI-m1m">
                                         <rect key="frame" x="148" y="228" width="124" height="22"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -333,7 +333,7 @@
                                     <constraint firstAttribute="height" constant="280" id="6UU-Qv-VWk"/>
                                     <constraint firstItem="hTI-iq-gDr" firstAttribute="centerX" secondItem="B1X-8W-cxb" secondAttribute="centerX" id="CUO-qI-fcg"/>
                                     <constraint firstItem="hTI-iq-gDr" firstAttribute="bottom" secondItem="B1X-8W-cxb" secondAttribute="bottom" constant="-30" id="CwX-PC-PVR"/>
-                                    <constraint firstItem="hTI-iq-gDr" firstAttribute="trailing" secondItem="Io6-FI-m1m" secondAttribute="trailing" id="CxA-WA-dSO"/>
+                                    <constraint firstItem="hTI-iq-gDr" firstAttribute="trailing" secondItem="Io6-FI-m1m" secondAttribute="trailing" constant="-18" id="CxA-WA-dSO"/>
                                     <constraint firstItem="IrB-tY-hmX" firstAttribute="leading" secondItem="2vh-l8-24o" secondAttribute="leading" id="Gau-Lf-Qli"/>
                                     <constraint firstItem="YQ3-Il-Fzd" firstAttribute="bottom" secondItem="IrB-tY-hmX" secondAttribute="bottom" constant="-30" id="TI4-hn-TRR"/>
                                     <constraint firstItem="U0O-Kl-WRw" firstAttribute="leading" secondItem="CV7-4O-CMC" secondAttribute="trailing" constant="26" id="Uvl-S0-8Xl"/>
@@ -342,7 +342,7 @@
                                     <constraint firstItem="B1X-8W-cxb" firstAttribute="top" secondItem="2vh-l8-24o" secondAttribute="top" id="lzG-qm-Rqk"/>
                                     <constraint firstItem="zdh-j2-9W8" firstAttribute="top" secondItem="IrB-tY-hmX" secondAttribute="bottom" id="ndE-h2-LeM"/>
                                     <constraint firstItem="hTI-iq-gDr" firstAttribute="leading" secondItem="IrB-tY-hmX" secondAttribute="trailing" constant="27" id="q0m-2Z-Uzp"/>
-                                    <constraint firstItem="hTI-iq-gDr" firstAttribute="leading" secondItem="Io6-FI-m1m" secondAttribute="leading" id="qBy-Qj-j45"/>
+                                    <constraint firstItem="hTI-iq-gDr" firstAttribute="leading" secondItem="Io6-FI-m1m" secondAttribute="leading" constant="19" id="qBy-Qj-j45"/>
                                     <constraint firstItem="CV7-4O-CMC" firstAttribute="bottom" secondItem="zdh-j2-9W8" secondAttribute="bottom" constant="-30" id="rQS-jU-C3F"/>
                                     <constraint firstItem="zdh-j2-9W8" firstAttribute="leading" secondItem="2vh-l8-24o" secondAttribute="leading" id="u1K-Tj-xlq"/>
                                     <constraint firstItem="CV7-4O-CMC" firstAttribute="trailing" secondItem="YQ3-Il-Fzd" secondAttribute="trailing" id="vVB-bq-Y4T"/>
@@ -1031,6 +1031,7 @@
                     </tableView>
                     <connections>
                         <segue destination="VsI-SJ-3YU" kind="show" identifier="ReplySegue" id="kp0-Gt-Zug"/>
+                        <segue destination="21k-fF-tRV" kind="presentation" identifier="LoginSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="fP5-VW-Vxg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyY-Qu-OsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1086,6 +1087,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wkc-oB-WzR"/>
-        <segue reference="jZO-J2-nJT"/>
+        <segue reference="fP5-VW-Vxg"/>
     </inferredMetricsTieBreakers>
 </document>
