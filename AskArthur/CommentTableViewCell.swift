@@ -21,14 +21,24 @@ class CommentTableViewCell: UITableViewCell {
     @IBOutlet weak var upvoteButton: SpringButton!
     @IBOutlet weak var replyButton: SpringButton!
     @IBOutlet weak var commentTextView: AutoTextView!
+    @IBOutlet weak var indentView: UIView!
+    
     weak var delegate: CommentTableViewCellDelegate?
     
+    @IBOutlet weak var avatarLeftConstraint: NSLayoutConstraint!
     @IBAction func upvoteButtonDidTouch(sender: AnyObject) {
         delegate?.commentTableViewCellDidTouchUpvote(self)
+        upvoteButton.animation = "pop"
+        upvoteButton.force = 3
+        upvoteButton.animate()
+        //SoundPlayer.playSound("upvote.wav")
     }
     
     @IBAction func replyButtonDidTouch(sender: AnyObject) {
         delegate?.commentTableViewCellDidTouchComment(self)
+        replyButton.animation = "pop"
+        replyButton.force = 3
+        replyButton.animate()
     }
     
     func configureWithComment(comment: JSON) {
@@ -56,6 +66,17 @@ class CommentTableViewCell: UITableViewCell {
         } else {
             upvoteButton.setImage(UIImage(named: "icon-upvote"), forState: UIControlState.Normal)
             upvoteButton.setTitle(toString(voteCount), forState: UIControlState.Normal)
+        }
+        
+        let depth = comment["depth"].int! > 4 ? 4 : comment["depth"].int!
+        if depth > 0 {
+            avatarLeftConstraint.constant = CGFloat(depth) * 20 + 25
+            separatorInset = UIEdgeInsets(top: 0, left: CGFloat(depth) * 20 + 15, bottom: 0, right: 0)
+            indentView.hidden = false
+        } else {
+            avatarLeftConstraint.constant = 10
+            separatorInset = UIEdgeInsets(top: 0, left: 35, bottom: 0, right: 0)
+            indentView.hidden = true
         }
     }
 

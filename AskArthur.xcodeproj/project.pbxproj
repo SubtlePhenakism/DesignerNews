@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46014A001B829BF000765BD2 /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460149FF1B829BF000765BD2 /* ReplyViewController.swift */; };
+		46014A071B82B5CF00765BD2 /* refresh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46014A051B82B5CF00765BD2 /* refresh.wav */; };
+		46014A081B82B5CF00765BD2 /* upvote.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46014A061B82B5CF00765BD2 /* upvote.wav */; };
 		464423171B7731FE00AA5ABC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464423161B7731FE00AA5ABC /* LoginViewController.swift */; };
 		464BB8C41B793A0400594BA4 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BB8C31B793A0400594BA4 /* LearnViewController.swift */; };
 		466D2D121B7D6EB5008AF1CD /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D2D111B7D6EB5008AF1CD /* CommentsTableViewController.swift */; };
@@ -122,6 +125,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		460149FF1B829BF000765BD2 /* ReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
+		46014A051B82B5CF00765BD2 /* refresh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = refresh.wav; sourceTree = "<group>"; };
+		46014A061B82B5CF00765BD2 /* upvote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = upvote.wav; sourceTree = "<group>"; };
 		464423161B7731FE00AA5ABC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		464BB8C31B793A0400594BA4 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		466D2D111B7D6EB5008AF1CD /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +210,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46014A041B82B5CF00765BD2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				46014A051B82B5CF00765BD2 /* refresh.wav */,
+				46014A061B82B5CF00765BD2 /* upvote.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		46A087161B8136D500BDE9F9 /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +267,7 @@
 		46C53CE31B73F69200E0B8EF /* AskArthur */ = {
 			isa = PBXGroup;
 			children = (
+				46014A041B82B5CF00765BD2 /* Sounds */,
 				46A04FE31B7E767400A4A783 /* SwiftyJSON.swift */,
 				46A087161B8136D500BDE9F9 /* TPKeyboardAvoiding */,
 				46EBD4911B75419A00B0A9A4 /* Spring */,
@@ -261,6 +277,7 @@
 				46A087391B81940200BDE9F9 /* LocalStore.swift */,
 				46D426D91B7BEC470005FE86 /* StoriesTableViewController.swift */,
 				469CA3781B7C380000805259 /* StoryTableViewCell.swift */,
+				460149FF1B829BF000765BD2 /* ReplyViewController.swift */,
 				464423161B7731FE00AA5ABC /* LoginViewController.swift */,
 				464BB8C31B793A0400594BA4 /* LearnViewController.swift */,
 				46D426DB1B7C04200005FE86 /* MenuViewController.swift */,
@@ -461,6 +478,8 @@
 				46C53CEF1B73F69200E0B8EF /* Main.storyboard in Resources */,
 				46C53CF41B73F69200E0B8EF /* LaunchScreen.xib in Resources */,
 				46C53CF11B73F69200E0B8EF /* Images.xcassets in Resources */,
+				46014A071B82B5CF00765BD2 /* refresh.wav in Resources */,
+				46014A081B82B5CF00765BD2 /* upvote.wav in Resources */,
 				46EBD4BF1B75419A00B0A9A4 /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +507,7 @@
 				46EBD4C01B75419A00B0A9A4 /* Misc.swift in Sources */,
 				46A087201B8136D500BDE9F9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				464BB8C41B793A0400594BA4 /* LearnViewController.swift in Sources */,
+				46014A001B829BF000765BD2 /* ReplyViewController.swift in Sources */,
 				46A04FE41B7E767400A4A783 /* SwiftyJSON.swift in Sources */,
 				46A087211B8136D500BDE9F9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				46CFC0AE1B7D34BA000D9365 /* Data.swift in Sources */,
